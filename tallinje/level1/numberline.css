@@ -1,0 +1,70 @@
+
+.nummerplade {
+    color: #033D60;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 22px;
+    font-weight: 300;
+    height: 20px;
+    left: 25px;
+    margin-left: -19px;
+    position: relative;
+    text-align: center;
+    top: -130px;
+    width: 26px;
+}
+
+.placeret {
+    color: #DDDDDD;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    left: 15px;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    top: -110px;
+    width: 17px;
+}
+
+#canvas {
+    margin-top: 150px;
+    z-index: 0;
+}
+
+.draggable {
+    -webkit-user-select: none;
+  /* Chrome all / Safari all */
+    -moz-user-select: none;
+     /* Firefox all */
+    -ms-user-select: none;
+      /* IE 10+ */
+  /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50px;
+}
+
+#container {
+    height: 170px;
+    width: 932px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    cursor: pointer;
+    margin-left: 9px;
+    margin-top: 30px;
+}
+
+.naevner_br {
+    margin-bottom: -29px;
+    margin-top: -24px;
+}

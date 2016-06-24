@@ -1,0 +1,1293 @@
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
+	/*
+
+*	For at gøre dette stylesheet brugbart på en produkt side, upload filen på følgende site lokation:
+
+*
+
+*	<Aktuelle site>/Documents/CSS/	||	Eksempel: Http://publ.e-undervisning.net/kroppen/Documents/CSS/
+
+*	
+
+*	Eksistere mappen 'CSS' ikke i dokument bibliotekket 'Dokumenter', så opret en ny folder og give den
+
+*	titlen 'CSS' og upload derefter denne CSS fil i denne folder.
+
+
+*	-- Overordnede style på produkt siden --
+
+*/
+
+
+
+/*	elearningmainwrapper er den style som giver sitet den mørke grå, lidt grumsede baggrund */
+
+.elearningmainwrapper
+
+{
+
+	background-image: none;
+
+    background-color: rgb(250,250,250) !important;
+}
+
+
+
+/*	Nedenstående er den DIV som indeholder alle elementerne på produkt siden, og som også giver
+
+*	siden den lysegrå baggrundsfarve.
+
+*/
+
+#wrapper960, .elearningproduect
+
+{
+
+	background-image: none;
+
+	background-color: transparent;
+
+}
+
+
+
+/*	Nedenståender CSS class' ændre KUN på linkfarver i Content Editor Webparts og Fritekst områder. */
+
+.s4-wpTopTable .ms-WPBody a:link, .s4-wpTopTable .ms-WPBody a, .s4-wpTopTable .ms-WPBody a:hover, .s4-wpTopTable .ms-WPBody a:visited
+
+{
+
+	color: #3498DB;
+
+	text-decoration: underline;
+
+}
+
+
+
+/*	Nedenståender CSS class' ændre KUN på linkfarver i produkt sidens titler. */
+
+#wrapper960 a.productheadline:link, #wrapper960 a.productheadline, #wrapper960 a.productheadline:hover, #wrapper960 a.productheadline:visited
+
+{
+
+	color: White;
+
+	text-decoration: none;
+
+}
+
+
+
+/*	PageTitle styler selve sidens titel, hvis den bliver vist på produkt siden. */
+
+.PageTitle
+
+{
+
+	font-family: arial;
+
+	font-weight: bold;
+
+	font-size: 14px !important;
+
+	color: #ffffff;
+
+	background-image: url(    '/_layouts/images/KVUC/ELearning/topmenu.png' );
+
+	background-repeat: no-repeat;
+
+}
+
+
+
+/*
+
+*	-- Webpart style overrides --
+
+*/
+
+
+
+/*	Denne CSS class ændre stylen på en Webparts titel, hvis titlen bliver vist.
+
+*	Dette vil slå igennem på ALLE webparts på det aktuelle site.
+
+*/
+
+.ms-WPTitle
+
+{
+
+	font-family: Arial;
+
+	font-size: 14px !important;
+
+	font-weight: bold;
+
+	color: #656565;
+
+}
+
+
+
+/*	Hvis webparten er en ListViewWebpart, altså en liste som er sat ind på siden som webpart,
+
+*	så vil webpart titlen være et link hen til listen. Så denne style ændre styling af LINKS
+
+*	i en webparts titel. Dette vil slå igennem på ALLE webparts på det aktuelle site.
+
+*/
+
+.ms-WPTitle A
+
+{
+
+	color: #669999;
+
+}
+
+
+
+/*	Ønsker man at give webpart titlen en baggrunds farve, eller et baggrunds billede
+
+*	så er det denne man skal tilføje det til. Dette vil slå igennem på ALLE webparts på det aktuelle site.
+
+*/
+
+.ms-WPHeader > td
+
+{
+
+	border-bottom: none !important;
+
+}
+
+
+
+/*
+
+*	-- Content Editor Webpart / Fritekst felt / Tooltip style overrides --
+
+*/
+
+
+
+/*	Nedenstående CSS class' vil ændre farven på alle titler i en Content Editor Webparts eller
+
+*	fritekst felter hvor i der er valgt en titel formattering af et link.
+
+*/
+
+.kvuc-rteElement-KVUCHeader a, .kvuc-rteElement-KVUCHeader a:link, .kvuc-rteElement-KVUCHeader a:visited, .kvuc-rteElement-KVUCHeader a:active, .kvuc-rteElement-KVUCHeader a:hover, .kvuc-rteElement-KVUCSubHeader a, .kvuc-rteElement-KVUCSubHeader a:link, .kvuc-rteElement-KVUCSubHeader a:visited, .kvuc-rteElement-KVUCSubHeader a:active, .kvuc-rteElement-KVUCSubHeader a:hover
+
+{
+
+	color: #7EAAA2;
+
+	text-decoration: underline;
+
+}
+
+
+
+/*	Nedenstående CSS class' vil ændre stylingen på tekst og links i Tooltips */
+
+#wrapper960 a.tooltip, #wrapper960 a.tooltip:link, #wrapper960 a.tooltip:hover, #wrapper960 a.tooltip:visited
+
+{
+
+	background-color: #e2e2e2;
+
+	color: #4d4d4d;
+
+	font-size: 12px;
+
+	text-decoration: none;
+
+}
+
+
+
+.tooltiptext
+
+{
+
+	background-color: #fff;
+
+}
+
+
+
+/*	Nedenstående styles omfatter al tekst i Content Editor Webparts samt Fri-tekst felter, inklusiv
+
+*	alternative tekster til billeder.	
+
+*/
+
+
+
+/* Ændre tekst og farve på billed tekster. */
+
+.kvuc-rteImage-1 .altText
+
+{
+
+	font-family: Arial;
+
+}
+
+.kvuc-rteImage-2 .altText
+
+{
+
+	font-family: Arial;
+
+}
+
+.kvuc-rteImage-3 .altText
+
+{
+
+	font-family: Arial;
+
+}
+
+.kvuc-rteImage-4 .altText
+
+{
+
+	font-family: Arial;
+
+}
+
+
+
+/* Ændre skrift og farve på hovedtitler, samt undertitler i teksten. */
+
+.ms-rtestate-field
+
+{
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 14px !important;
+
+	font-weight: normal;
+
+	color: #656565;
+
+}
+
+
+
+.ms-rtestate-field A
+
+{
+
+	color: #3498DB;
+
+	text-decoration: underline;
+
+}
+
+
+
+/* Ændre skrift & farve på både almindelig tekst, samt links. */
+
+.kvuc-rteElement-KVUCPlain
+
+{
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 14px !important;
+
+	color: #656565;
+
+}
+
+
+
+.kvuc-rteElement-KVUCPlain a
+
+{
+
+	color: #3498DB !important;
+
+	text-decoration: underline;
+
+}
+
+
+
+.kvuc-rteElement-KVUCHeader
+
+{
+
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 22px !important;
+
+	font-weight: 600;
+
+	color: black;
+
+}
+
+
+
+.kvuc-rteElement-KVUCSubHeader
+
+{
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 16px !important;
+
+	font-weight: 700;
+
+	color: black;
+
+}
+
+
+
+.kvuc-rteElement-KVUCPlain A.tooltip{
+
+	color: #4d4d4d !important;
+
+}
+
+
+
+/* Ændre tekst og farve på tekst med Læsefokus formattering. */
+
+.kvuc-rteElement-KVUCArticleFocus
+
+{
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 16px !important;
+
+	font-weight: 600;
+
+	color: #333333;
+
+	padding-left: 10px;
+
+	padding-right: 10px;
+
+}
+
+
+
+/*	Ændre baggrundsfarve og tekst formattering på intro box.
+
+*/
+
+div.kvuc-rteElement-KVUCIntroBox
+
+{
+
+	-ms-name: "Intro box Pink";
+
+	background-color: #d7247e;
+
+	color: #FFFFFF;
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 14px;
+
+	line-height: 130%;
+
+	padding: 40px 30px;
+
+	
+
+	box-shadow: inset 0px 2px 10px 0px rgba(0,0,0,.03);
+
+	
+
+	/* Columns */
+
+	
+
+	/*-webkit-columns: auto 2;
+
+	-moz-columns: auto 2;
+
+	columns: auto 2;
+
+	-webkit-column-gap: 30px;
+
+	-moz-column-gap: 30px;
+
+	column-gap: 30px;*/
+
+}
+
+
+
+.kvuc-rteElement-KVUCIntroBox a {
+
+	color: white;
+
+}
+
+
+
+div.kvuc-rteElement-KVUCIntroBoxBlue
+
+{
+
+	-ms-name: "Intro box Blå";
+
+	background-color: #6B9ED1;
+
+	color: #FFFFFF;
+
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+
+	line-height: 130%;
+
+	padding: 40px 30px;
+
+	
+
+	box-shadow: inset 0px 2px 10px 0px rgba(0,0,0,.03);
+
+	
+
+	/* Columns */
+
+	
+
+	/*-webkit-columns: auto 2;
+
+	-moz-columns: auto 2;
+
+	columns: auto 2;
+
+	-webkit-column-gap: 30px;
+
+	-moz-column-gap: 30px;
+
+	column-gap: 30px;*/
+
+}
+
+
+
+.kvuc-rteElement-KVUCIntroBoxBlue a {
+
+	color: white;
+
+}
+
+
+
+div.kvuc-rteElement-KVUCIntroBoxHeader {
+
+	-ms-name: "Intro Box Header";
+
+	font-size: 20px;
+
+	font-weight: 600;
+
+	text-transform: uppercase;
+
+}
+
+
+
+.kvuc-rteElement-KVUCIntroBox A.tooltip
+
+{
+
+	background-color: #4F99B2 !important;
+
+	color: #FFF !important;
+
+	font-size: 10px !important;
+
+}
+
+
+
+div.kvuc-rteElement-KVUCLboxbrod
+
+{
+
+	-ms-name: "LBOX Brødtext";
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-weight: 600;
+
+	color: #656565;
+
+}
+
+
+
+div.kvuc-rteElement-KVUCLboxHeader
+
+{
+
+	-ms-name: "LBOX Header";
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 18px !important;
+
+	font-weight: 700;
+
+	color: black;
+
+	padding-left: 0px;
+
+	padding-right: 0px;
+
+}
+
+
+
+div.kvuc-rteElement-KVUCGloserPlain
+
+{
+
+	-ms-name: "Gloser Plain";
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 13px;
+
+	color: #656565;
+
+	line-height: 1.2em;
+
+}
+
+
+
+div.kvuc-rteElement-KVUCGloserHeader
+
+{
+
+	-ms-name: "Gloser Header";
+
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 14px;
+
+	font-weight: 600;
+
+	letter-spacing: 0.01em;
+
+	color: #597A2E;
+
+	border-top: 1px solid #999;
+
+	margin: 10px 0 0 0;
+
+	padding: 4px 0 0 0;
+
+}
+
+strong, b {
+
+	font-weight: 600 !important;
+
+}
+
+
+
+
+
+.ms-rte-wpbox
+
+{
+
+	font-size: 12px !important;
+
+}
+
+
+
+/*
+
+
+
+*                          -- Styling af Content Editor Webparts med LBOX/RBOX/MBOX prefix --
+
+
+
+*/
+
+
+
+ 
+
+
+
+/* Skifter baggrundsbilledet i øvre højre hjørne */
+
+
+
+.cewpTopRightCorner{
+
+
+
+                             background-image: url('/_layouts/images/KVUC/ELearning/drop_out_topCorner.png');
+
+
+
+                             background-repeat: no-repeat; 
+
+
+
+                             height: 8px;
+
+
+
+}
+
+
+
+/* Skifter baggrundsbilledet i det midterste stykke af toppen */
+
+
+
+.cewpTopCenter{
+
+
+
+                             background-image: url('/_layouts/images/KVUC/ELearning/drop_out_top.png');
+
+
+
+                             background-repeat: repeat-x; 
+
+
+
+                             height: 8px; 
+
+
+
+}
+
+
+
+/*  Skifter baggrundsbilledet på øvre venstre hjørne */
+
+
+
+.cewpTopLeftCorner{
+
+
+
+                             background-image: url('/_layouts/images/KVUC/ELearning/drop_out_topCornerLeft.png');
+
+
+
+    background-repeat: no-repeat; 
+
+
+
+    height: 8px;
+
+
+
+}
+
+
+
+/* Skifter baggrundsbillede på nedre højre hjørne */
+
+
+
+.cewpBottomRightCorner{
+
+
+
+                             background-image: url('/_layouts/images/KVUC/ELearning/drop_out_bottomCorner.png');
+
+
+
+    background-repeat: no-repeat; 
+
+
+
+                             height: 8px;
+
+
+
+}
+
+
+
+/* Skifter baggrundsbillede på nedre midte */
+
+
+
+.cewpBottomCenter{
+
+
+
+                             background-image: url('/_layouts/images/KVUC/ELearning/drop_out_bottom.png');
+
+
+
+    background-repeat: repeat-x; 
+
+
+
+                             height: 8px;
+
+
+
+}
+
+
+
+/* Skifter baggrundsbillede på nedre venstre hjørne */
+
+
+
+.cewpBottomLeftCorner{
+
+
+
+                             background-image: url('/_layouts/images/KVUC/ELearning/drop_out_bottomCornerLeft.png');
+
+
+
+    background-repeat: no-repeat; 
+
+
+
+                             height: 8px;
+
+
+
+}
+
+
+
+/* Skifter baggrundsbillede på midtens venstre side */
+
+
+
+.LBOX_cewpBodyLeft, .RBOX_cewpBodyLeft, .MBOX_cewpBodyLeft{
+
+
+
+                             background-image: url('/_layouts/images/KVUC/ELearning/drop_out_sideLeft.png');
+
+
+
+    background-repeat: repeat-y; 
+
+
+
+}    
+
+
+
+/* Skifter baggrunds farve og ramme på selve indholdet */
+
+
+
+.cewpBodyCenter{
+
+
+
+                             vertical-align: top; 
+
+
+
+                             padding: 0px; 
+
+
+
+                             background-color: #ffffff; 
+
+
+
+                             padding-top: 0px;
+
+
+
+}
+
+
+
+/* Skifter baggrundsbillede på midtens højre side */
+
+
+
+.LBOX_cewpBodyRight, .RBOX_cewpBodyRight, .MBOX_cewpBodyRight{
+
+
+
+                             background-image: url('/_layouts/images/KVUC/ELearning/drop_out_side.png');
+
+
+
+    background-repeat: repeat-y; 
+
+
+
+}
+
+
+
+TABLE.rboxTable{
+
+	background-color: transparent !important;
+
+}
+
+
+
+/*                        
+
+
+
+ 
+
+
+
+*                          Denne sektion styler den horizontale styling af tabs/accordion
+
+
+
+ 
+
+
+
+*/
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+.blue_embossed_tabs {
+
+
+
+	width:100%;
+
+	font-family:Verdana, Helvetica;
+
+	line-height:normal;
+
+	text-decoration: none;
+
+	
+
+}
+
+
+
+
+
+
+
+.blue_embossed_tabs li {
+
+
+
+	background:url("/alledeltagere/team6/gruppe6b/forloeb1_2/islam/PublishingImages/generel_grafik/green-1Rh.jpg") no-repeat right top !important;
+
+	height: 27px;
+
+	color: lime !important;
+
+	
+
+}
+
+
+
+
+
+.blue_embossed_tabs a:link,
+
+.blue_embossed_tabs a:visited,
+
+.blue_embossed_tabs a {
+
+
+
+   background:url("/alledeltagere/team6/gruppe6b/forloeb1_2/islam/PublishingImages/generel_grafik/green-1Lh.jpg") no-repeat left top !important;
+
+	text-decoration: none ! important;
+
+	color: lime !important;
+
+	
+
+
+
+}
+
+
+
+.blue_embossed_tabs .underline {
+
+
+
+   /* background-image: url("/alledeltagere/teamproduktion/gruppeproduktion/forloeb1/skabelonwebsted/PublishingImages/Tabs/green-2Fv.png")!important; */
+
+
+
+	background: none !important;
+
+	background-position:left top;
+
+	background-repeat:repeat-x;
+
+	height:0px;
+
+
+
+}
+
+ 
+
+.blue_embossed_tabs .selected {
+
+
+
+	background-image:url("/alledeltagere/team6/gruppe6b/forloeb1_2/islam/PublishingImages/generel_grafik/green-2Rh.jpg")!important;
+
+	border-bottom: none;
+
+	text-decoration: none ! important;
+
+}
+
+
+
+.blue_embossed_tabs .selected a {
+
+
+
+	color:#565454!important;
+
+	padding: 10px 15px 10px 15px;
+
+	background-image: url("/alledeltagere/team6/gruppe6b/forloeb1_2/islam/PublishingImages/generel_grafik/green-2Lh.jpg")!important;
+
+	text-decoration: none ! important;
+
+	
+
+}
+
+
+
+/* Fjerne border/skygger omkring feltet i midten */
+
+.PageLayout6CellTop, .PageLayout6CellMiddle, .PageLayout6CellBottom, .PageLayout12CellTop, .PageLayout12CellMiddle, .PageLayout12CellBottom {
+
+	background-image: none !important;
+
+	background-color: #ffffff;
+
+}
+
+
+
+
+
+
+
+.indryk20px {
+
+	position:relative !important;
+
+	left: 20px;
+
+}
+
+
+
+/* Styling af selve siden */
+
+
+
+.ms-WPBody {
+
+	margin: 0;
+
+	padding: 0;
+
+/*	width: 320px;*/
+
+}
+
+
+
+.PageLayout3CellTop,
+
+.PageLayout4CellTop,
+
+.PageLayout6CellTop,
+
+.PageLayout8CellTop,
+
+.PageLayout9CellTop,
+
+.PageLayout12CellTop {
+
+	background-image: none !important;
+
+	height: 0;
+
+}
+
+
+
+.PageLayout3CellBottom,
+
+.PageLayout4CellBottom,
+
+.PageLayout6CellBottom,
+
+.PageLayout8CellBottom,
+
+.PageLayout9CellBottom,
+
+.PageLayout12CellBottom {
+
+	background-image: none !important;
+
+	height: 0;
+
+}
+
+
+.PageLayout3CellLeft,
+
+.PageLayout4CellLeft,
+
+.PageLayout6CellLeft,
+
+.PageLayout8CellLeft,
+
+.PageLayout9CellLeft,
+
+.PageLayout12CellLeft {
+
+	background-image: none !important;
+	padding: 0;
+	margin: 0;
+
+}
+
+
+
+.PageLayout3CellMiddle,
+
+.PageLayout4CellMiddle,
+
+.PageLayout6CellMiddle,
+
+.PageLayout8CellMiddle,
+
+.PageLayout9CellMiddle,
+
+.PageLayout12CellMiddle {
+
+	background-image: none !important;	
+
+	background-repeat: repeat-y;
+
+	padding: 0;
+
+	margin: 0;
+
+/*	margin-left: 2px;
+
+	margin-right: 12px;*/
+
+/*	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);*/
+}
+
+.PageLayout8CellMiddle{
+/*	width: 612px;*/
+}
+
+.PageLayout3Cell,
+.PageLayout4Cell,
+.PageLayout6Cell,
+.PageLayout8Cell,
+.PageLayout9Cell
+{
+    margin-bottom: 10px;
+	margin-left: 28px;
+}
+
+.PageLayout8Cell{
+	width: 612px !important;
+}
+
+.PageLayout9Cell
+{
+    width: 680px;
+    margin-right: 0;
+    margin-left:60px;
+}
+
+
+.PageLayout12Cell
+{
+    width: 100%;
+    margin: 0;
+}
+
+
+.PageLayout12CellMiddle {
+
+	background-color: transparent !important;
+/*	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	padding: 20px 90px 10px 30px;*/
+
+}
+
+
+
+.PageLayoutContentWrapper {
+
+	padding-top: 9px;
+
+}
+
+
+.PageLayout3CellLeft .ms-rtestate-field .ms-rte-wpbox .ms-WPBody {
+
+	box-shadow: none;
+	/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+*/
+}
+
+.PageLayout12CellMiddle .ms-WPBody {
+
+    box-shadow: none;
+
+}
+
+
+
+/* Styling af selve siden - END */
+
+
+
+/*.PageLayout3CellLeft .ms-WPBody {
+
+	margin: 0 0 -2px -10px !important;
+
+	width: 210px !important;
+
+}*/
+
+
+
+/*.PageLayout9CellMiddle {
+
+    margin-right: -8px !important;
+
+}*/
+
+
+
+.kvuc-rteElement-KVUCIntroBox .kvuc-rteTableHeaderFirstCol-default,
+
+.kvuc-rteElement-KVUCIntroBoxBlue .kvuc-rteTableHeaderFirstCol-default, .kvuc-rteElement-KVUCIntroBox .kvuc-rteTableHeaderLastCol-default, .kvuc-rteElement-KVUCIntroBoxBlue .kvuc-rteTableHeaderLastCol-default{
+
+	text-align: left;
+
+	font-weight: normal;
+
+	width: 50%;
+
+	max-width: 250px;
+
+	vertical-align: top;
+
+}
+
+.kvuc-rteElement-KVUCIntroBox .kvuc-rteTableHeaderFirstCol-default,
+
+.kvuc-rteElement-KVUCIntroBoxBlue .kvuc-rteTableHeaderFirstCol-default {
+
+	padding: 0 15px 0 0;
+
+}
+
+.kvuc-rteElement-KVUCIntroBox .kvuc-rteTableHeaderLastCol-default,
+
+.kvuc-rteElement-KVUCIntroBoxBlue .kvuc-rteTableHeaderLastCol-default {
+
+	padding: 0 0 0 15px;
+
+}
+
+
+
+.ms-formfieldvaluecontainer.ms-rte-border table th {
+
+	background-color: rgba(0, 0, 0, 0.03);
+
+	border: 1px dotted rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+/*.PageLayout9CellMiddle .ms-WPBody {
+
+    margin: 0 0 4px 0px;
+
+    padding: 0px;
+
+}*/
+
+
+
+
+
+
+#mainmenu {
+	border-radius: 0 0 3px 3px;
+}
+
+#mainmenu li.first > span > span {
+	border-radius: 0 0 0 3px;
+}
+.mdd-topmenu li.first > span > span > a {
+	border-radius: 0 0 0 3px;
+}
+
+
+
+
+

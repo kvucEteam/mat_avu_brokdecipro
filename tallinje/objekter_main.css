@@ -1,0 +1,241 @@
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,300";
+
+body {
+    -moz-user-select: none;
+    background-color: #FAFAFA;
+    color: #245673;
+    font-family: Open Sans;
+}
+
+img {
+    pointer-events: none;
+}
+
+.header {
+    color: #245673;
+}
+
+.feed {
+    clear: both;
+    margin-bottom: 0;
+}
+
+.bar {
+    background-color: green;
+    border-radius: 1px 1px 1px 1px;
+    bottom: 0;
+    color: #FFFFFF;
+    font-weight: 300;
+    height: 14px;
+    position: absolute;
+    width: 940px;
+}
+
+.barfill {
+    background-color: black;
+    border-radius: 1px 1px 1px 1px;
+    bottom: 0;
+    color: #033D60;
+    font-family: Open Sans;
+    font-size: 12px;
+    height: 14px;
+    padding-left: 4px;
+    padding-top: 0;
+    position: absolute;
+    text-align: left;
+    width: 0;
+}
+
+.sym_bar {
+    background-color: #D2E0A3;
+}
+
+.sym_fill {
+    background-color: #A5C045;
+}
+
+.mod_bar {
+    background-color: #80E7E6;
+}
+
+.mod_fill {
+    background-color: #02CCCE;
+}
+
+.res_bar {
+    background-color: #EFA7CD;
+}
+
+.res_fill {
+    background-color: #E748A7;
+}
+
+.pro_bar {
+    background-color: #F1DE82;
+}
+
+.pro_fill {
+    background-color: #E3BB04;
+}
+
+.kom_bar {
+    background-color: #80bab5;
+}
+
+.kom_fill {
+    background-color: #00746b;
+}
+
+.draggable {
+    cursor: pointer;
+}
+
+#objekt_container {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    width: 940px;
+}
+
+.correct {
+    background-image: url("img/correct.png");
+    height: 60px;
+    width: 60px;
+    margin-left: 880px;
+    margin-top: -160px;
+    z-index: 2;
+}
+.finish {
+
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+}
+
+.btn_tjek {
+    background-image: url("img/btn_tjek.png");
+    bottom: 40px;
+    cursor: pointer;
+    height: 51px;
+    position: absolute;
+    width: 179px;
+}
+
+.btn_next {
+    background-color: #649EBF;
+    bottom: 40px;
+    cursor: pointer;
+    right: 30px;
+    position: absolute;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 5em;
+    line-height: 0.5em;
+    padding: 0 0.17em 0.17em;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn_next:hover {
+    background-color: #528CB1;
+
+}
+
+
+.btn_skift {
+    background-image: url("img/btn_skift.png");
+    bottom: 40px;
+    cursor: pointer;
+    height: 51px;
+    left: 386px;
+    position: absolute;
+    width: 179px;
+}
+
+.btn_tjek:hover {
+    background-image: url("img/btn_tjek_hover.png");
+}
+
+.btn_skift:hover {
+    background-image: url("img/btn_skift_hover.png");
+}
+
+.btn_hjaelp:hover {
+    background-image: url("img/btn_help_hover.png");
+}
+
+.button_se {
+}
+
+.btn_hjaelp {
+    background-image: url("img/btn_help.png");
+    bottom: 40px;
+    cursor: pointer;
+    height: 51px;
+    position: absolute;
+    width: 179px;
+}
+
+.button_klar {
+}
+
+.activeDrag {
+    z-index: 100;
+}
+
+.alertBox {
+    background-image: url("img/box_bgr.png");
+    border: 1px solid #000000;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    cursor: pointer;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 288px;
+}
+
+.alert_header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: -4px;
+}
+
+.alert_bread {
+    font-size: 14px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    margin-top: 70px;
+    width: 400px;
+}
+
+.overlay {
+    background-image: url("img/bgr.png");
+    height: 520px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 952px;
+    z-index: 200;
+    margin: 0;
+    padding: 0;
+}
+
+.luk {
+    background-image: url("img/luk.jpg");
+    background-repeat: no-repeat;
+    height: 38px;
+    margin-left: 430px;
+    margin-top: 10px;
+}

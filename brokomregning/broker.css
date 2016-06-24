@@ -1,0 +1,196 @@
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,300";
+.brok, .procent, .decimal {
+    float: left;
+    font-size: 37px;
+    margin-left: 5px;
+    width: 155px;
+}
+.brok {
+    left: 0;
+    top: -35px;
+    position: absolute;
+}
+.procent {
+    left: 346px;
+    position: absolute;
+}
+.decimal {
+    left: 167px;
+    position: absolute;
+}
+
+
+body, p {
+    background-color: rgb(250,250,250);
+    color:#676767;
+    font-family: Open Sans;
+    font-size: 40px;
+    text-align: center;
+}
+input {
+    background-color: transparent;
+    border: 2px solid #649EBF;
+    border-radius: 3px 3px 3px 3px;
+    color: #676767;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 300;
+    height: 50px;
+    text-align: center;
+    width: 100px;
+}
+.opgave {
+    float: left;
+    font-family: Open Sans;
+    font-weight: 300;
+}
+.inputcontainer {
+    float: left;
+    left: 240px;
+    position: absolute;
+    top: 22px;
+}
+.container {
+    position: relative;
+    height: 300px;
+    margin-top: 60px;
+    text-align: center;
+}
+.btn_cont {
+    height: 60px;
+    width: 470px;
+    position: absolute;
+    top: 200px;
+    padding: 0;
+}
+button {
+    background-color: #E8E8E8;
+    border: 0 none;
+    border-radius: 3px 3px 3px 3px;
+    color: #4B5056;
+    font-family: Open Sans;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 0;
+}
+
+button:hover {
+	background-color: #649EBF;
+	color: #FFF;
+}
+
+#tjek_svar{
+    margin-left: 305px;
+    font-size: 40px;
+    padding: 4px 30px 6px;
+    line-height: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+#get_answer{
+    margin-left: 0;
+    font-size: 25px;
+    padding: 8px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    background-color: #649EBF;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 300;
+    position: absolute;
+    top: 278px;
+    padding: 5px;
+
+}
+.correct {
+    left: 4px;
+    margin-left: 143px;
+    position: relative;
+    top: -52px;
+    width: 25%;
+    z-index:1;
+}
+
+.ruler {
+    border-top: 3px solid #676767;
+    margin-left: 17px;
+    margin-top: -41px;
+    padding: 3px;
+    width: 115px;
+}
+.equal {
+    font-size: 60px;
+    left: 152px;
+    position: absolute;
+    top: -11px;
+}
+.eq2 {
+    left: 315px;
+}
+
+br {
+    margin-bottom: 4px;
+}
+
+
+
+.equal.decpro{
+left: 155px;
+}
+.procent.decpro{
+    left: 200px;
+}
+.decimal.decpro{
+    left: 0; 
+}
+
+
+.alertBox {
+    background-image: url("box_bgr.png");
+    border: 1px solid #000000;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 288px;
+}
+
+.alert_header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: -4px;
+}
+
+.alert_bread {
+    font-size: 14px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+
+.overlay {
+    background-image: url("bgr.png");
+    height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 510px;
+    z-index: 200;
+    margin: 0;
+    padding: 0;
+    display: none;
+}

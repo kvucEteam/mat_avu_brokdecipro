@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<wrap>
+	<runde>
+		<spm
+		tekst="\(\frac{2}{6}\)"
+		korrekt="1"
+		>
+			<svar value="2,6"/>
+			<svar value="0,33"/>
+			<svar value="0,26"/>
+			<svar value="0,30"/>
+		</spm>
+		<spm
+		tekst="50%"
+		korrekt="3"
+		>
+			<svar value="5,0"/>
+			<svar value="50,0"/>
+			<svar value="0,05"/>
+			<svar value="0,50"/>
+		</spm>
+		<spm
+		tekst="0,125"
+		korrekt="0"
+		>
+			<svar value="\(\frac{1}{8}\)"/>
+			<svar value="\(\frac{1}{25}\)"/>
+			<svar value="\(\frac{1}{6}\)"/>
+			<svar value="\(\frac{12}{5}\)"/>
+		</spm>
+		<spm
+		tekst="\(\frac{2}{8}\)"
+		korrekt="2"
+		>
+			<svar value="0,30"/>
+			<svar value="0,28"/>
+			<svar value="0,25"/>
+			<svar value="2,8"/>
+		</spm>
+		<spm
+		tekst="12,5%"
+		korrekt="1"
+		>
+			<svar value="12,5"/>
+			<svar value="0,125"/>
+			<svar value="0,0125"/>
+			<svar value="1,25"/>
+		</spm>
+		<spm
+		tekst="50%"
+		korrekt="2"
+		>
+			<svar value="\(\frac{2}{3}\)"/>
+			<svar value="\(\frac{2}{6}\)"/>
+			<svar value="\(\frac{3}{6}\)"/>
+			<svar value="\(\frac{1}{6}\)"/>
+		</spm>
+		<spm
+		tekst="\(\frac{2}{6}\)"
+		korrekt="0"
+		>
+			<svar value="33%"/>
+			<svar value="20%"/>
+			<svar value="26%"/>
+			<svar value="40%"/>
+		</spm>
+		<spm
+		tekst="0,50"
+		korrekt="1"
+		>
+			<svar value="\(\frac{1}{5}\)"/>
+			<svar value="\(\frac{3}{6}\)"/>
+			<svar value="\(\frac{1}{4}\)"/>
+			<svar value="\(\frac{2}{3}\)"/>
+		</spm>
+		<spm
+		tekst="12,5%"
+		korrekt="3"
+		>
+			<svar value="\(\frac{1}{6}\)"/>
+			<svar value="\(\frac{2}{8}\)"/>
+			<svar value="\(\frac{2}{6}\)"/>
+			<svar value="\(\frac{1}{8}\)"/>
+		</spm>
+		<spm
+		tekst="0,33"
+		korrekt="2"
+		>
+			<svar value="3,3%"/>
+			<svar value="0,33%"/>
+			<svar value="33%"/>
+			<svar value="0,0033%"/>
+		</spm>
+		<spm
+		tekst="0,50"
+		korrekt="3"
+		>
+			<svar value="0,5%"/>
+			<svar value="5%"/>
+			<svar value="5,05%"/>
+			<svar value="50%"/>
+		</spm>
+		<spm
+		tekst="25%"
+		korrekt="0"
+		>
+			<svar value="\(\frac{2}{8}\)"/>
+			<svar value="\(\frac{2}{4}\)"/>
+			<svar value="\(\frac{1}{8}\)"/>
+			<svar value="\(\frac{3}{8}\)"/>
+		</spm>
+		<spm
+		tekst="\(\frac{1}{8}\)"
+		korrekt="1"
+		>
+			<svar value="0,18"/>
+			<svar value="0,125"/>
+			<svar value="1,8"/>
+			<svar value="1,32"/>
+		</spm>
+		<spm
+		tekst="0,25"
+		korrekt="2"
+		>
+			<svar value="\(\frac{4}{6}\)"/>
+			<svar value="\(\frac{1}{8}\)"/>
+			<svar value="\(\frac{2}{8}\)"/>
+			<svar value="\(\frac{2}{5}\)"/>
+		</spm>
+		<spm
+		tekst="\(\frac{3}{6}\)"
+		korrekt="1"
+		>
+			<svar value="5%"/>
+			<svar value="50%"/>
+			<svar value="36%"/>
+			<svar value="3,6%"/>
+		</spm>
+		<spm
+		tekst="0,33"
+		korrekt="3"
+		>
+			<svar value="\(\frac{3}{3}\)"/>
+			<svar value="\(\frac{1}{33}\)"/>
+			<svar value="\(\frac{1}{6}\)"/>
+			<svar value="\(\frac{2}{6}\)"/>
+		</spm>
+		<spm
+		tekst="25%"
+		korrekt="0"
+		>
+			<svar value="0,25"/>
+			<svar value="25,0"/>
+			<svar value="2,5"/>
+			<svar value="0,025"/>
+		</spm>
+		<spm
+		tekst="\(\frac{1}{8}\)"
+		korrekt="2"
+		>
+			<svar value="20%"/>
+			<svar value="18%"/>
+			<svar value="12,5%"/>
+			<svar value="1,8%"/>
+		</spm>
+		<spm
+		tekst="0,25"
+		korrekt="3"
+		>
+			<svar value="2,5%"/>
+			<svar value="0,025%"/>
+			<svar value="0,25%"/>
+			<svar value="25%"/>
+		</spm>
+		<spm
+		tekst="33%"
+		korrekt="0"
+		>
+			<svar value="\(\frac{2}{6}\)"/>
+			<svar value="\(\frac{4}{6}\)"/>
+			<svar value="\(\frac{1}{5}\)"/>
+			<svar value="\(\frac{2}{5}\)"/>
+		</spm>
+		<spm
+		tekst="0,125"
+		korrekt="1"
+		>
+			<svar value="1,25%"/>
+			<svar value="12,5%"/>
+			<svar value="0,125%"/>
+			<svar value="125%"/>
+		</spm>
+		<spm
+		tekst="\(\frac{2}{8}\)"
+		korrekt="0"
+		>
+			<svar value="25%"/>
+			<svar value="28%"/>
+			<svar value="2,8%"/>
+			<svar value="20%"/>
+		</spm>
+		<spm
+		tekst="\(\frac{3}{6}\)"
+		korrekt="3"
+		>
+			<svar value="0,52"/>
+			<svar value="0,36"/>
+			<svar value="3,6"/>
+			<svar value="0,50"/>
+		</spm>
+		<spm
+		tekst="33%"
+		korrekt="2"
+		>
+			<svar value="33,0"/>
+			<svar value="3,3"/>
+			<svar value="0,33"/>
+			<svar value="0,033"/>
+		</spm>
+	</runde>
+</wrap>

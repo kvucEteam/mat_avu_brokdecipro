@@ -1,0 +1,193 @@
+﻿/* Menu */
+.mdd-topmenu {
+	background-image: none !important;
+/*	background-color: white !important;*/
+}
+
+.mdd {
+border: none;
+
+/*    border-bottom: 1px solid white !important;
+    border-top: 1px solid white !important;*/
+}
+
+#mainmenu {
+     background-color: rgb(110,110,110) !important;
+    border: none;
+/*    border-bottom: 1px solid white !important;
+    border-top: 1px solid white !important;*/
+    height: 37px !important;
+    width: 960px !important;
+}
+
+.mdd ul li a, .mdd ul li a, .mdd ul a, .mdd ul a, .mdd ul span {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400 !important;
+	font-size: 16px !important;
+	color: white !important;
+}
+.mdd-topmenu-label {
+	/*color: white !important;*/
+}
+.pagelist UL LI A {
+    color: #656565 !important;
+}
+
+.mdd-topmenu-label:hover, .mdd-topmenu-label:active {
+	background-color: #649EBF !important;
+	/*color: #3498DB !important;*/
+	cursor: pointer !important;
+}
+.mdd-heading pagelist ul li a {
+	color: #656565 !important;
+}
+
+.drop {
+	background-image: none !important;
+	background-color: white !important;
+	box-shadow: 0 11px 13px -7px rgba(0, 0, 0, 0.2), 0 40px 30px -40px rgba(0, 0, 0, 0.5) inset !important;
+	width: 100% !important;
+	padding: 0 !important;
+}
+.drop .t {
+    background: none transparent !important;
+    height: 35px !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.drop .c {
+	background-color: transparent !important;
+	min-height: 50px !important;
+    max-height: 485px !important;
+    padding: 0 !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+.drop .b {
+    background: none transparent !important;
+    height: 35px !important;
+    margin-bottom: -10px !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+}
+
+.current, .mdd-topmenu-item-hover {
+	background: none !important;
+}
+.current .tab-content .mdd-topmenu-label {
+	color: #FF0080 !important;
+}
+
+
+/* Titel */
+.topbar {
+    background-image: none !important;
+    background-color: #4B5056 !important;
+    /*border-top: 4px solid #FFFFFF !important;*/
+    height: 55px !important;
+    border: none;
+}
+
+.titlerow h1 a, .titlerow h1 a {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	color: white !important;
+	text-transform: uppercase !important;
+}
+
+.pagelist > A > H3 {
+	background: url("/_layouts/images/kvuc/elearning/dot.png") no-repeat scroll 15px 10px transparent !important;
+	font-size: 16px !important;
+}
+.pagelist UL LI A {
+    background: url("/_layouts/images/kvuc/elearning/dot.png") no-repeat scroll 35px 10px transparent !important;
+    font-size: 16px !important;
+    color: #656565 !important;
+}
+
+.mdd ul .drop a, .mdd-heading h3 {
+	font-weight: 400 !important;
+}
+
+
+.topbar .center {
+	padding: 0!important;
+	width: 940px !important;
+}
+
+.mdd UL {
+	padding-left: 0 !important;
+}
+
+.mdd-topmenu-label {
+	padding:0 !important;
+	width:97px;
+	text-align: center;
+}
+
+/*.mdd-topmenu-label, .mdd-topmenu-label a:link, .mdd-topmenu-label a:visited {
+    color: black !important;
+}*/
+/*.mdd-topmenu-label a:hover {
+    color: #FFFFFF !important;
+}*/
+
+.pagelist A.currentsub, .pagelist > A.currentsub > H3{
+	background-image: none !important;
+	background-color: #649EBF;
+	display: block;
+	box-sizing:border-box;
+}
+
+.pagelist.forside span span a {
+	background: url("/avu/Kernestof/45/PublishingImages/home.svg") no-repeat scroll center center / auto 75% !important;
+}
+.pagelist.opgave1 span span a {
+	background: url("/avu/Kernestof/45/PublishingImages/opgave1.svg") no-repeat scroll center center / auto 75% !important;
+}
+.pagelist.opgave2 span span a {
+	background: url("/avu/Kernestof/45/PublishingImages/opgave2.svg") no-repeat scroll center center / auto 75% !important;
+}
+.pagelist.opgave3 span span a {
+	background: url("/avu/Kernestof/45/PublishingImages/opgave3.svg") no-repeat scroll center center / auto 75% !important;
+}
+.pagelist.opgave4 span span a {
+	background: url("/avu/Kernestof/45/PublishingImages/opgave4.svg") no-repeat scroll center center / auto 75% !important;
+}
+.pagelist.opgave5 span span a {
+	background: url("/avu/Kernestof/45/PublishingImages/opgave5.svg") no-repeat scroll center center / auto 75% !important;
+}
+.pagelist.opgave6 span span a {
+	background: url("/avu/Kernestof/45/PublishingImages/opgave6.svg") no-repeat scroll center center / auto 75% !important;
+}
+.pagelist span span a {
+	height: 42px;
+	width: 42px;
+	padding: 7px;
+	font-size: 0 !important;
+}
+
+.pagelist span span a.currentsub {
+	background-color: #649EBF !important;
+}
+
+#mainmenu {
+	height: 56px !important;
+}
+.mdd {
+	height: 56px;
+}
+.mdd-topmenu {
+	height: 56px;
+}
+.mdd-topmenu-item {
+	height: 56px;
+}
+
+.mdd-topmenu-label {
+	width: auto;
+}
