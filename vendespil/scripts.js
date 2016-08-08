@@ -36,8 +36,8 @@ $(document).ready(function() {
         }
     });
 
+    $('.instruction').append(instruction("Vend brikkerne rundt, så de passer sammen. Nogle af brikkerne angiver procenter, mens andre angiver brøker. Det er din opgave at finde de rigtige makkerpar. Du kan vælge mellem tre forskellige niveauer."));
     one_line_footer();
-    intructiontext("Min nye teskts<br/>");
 });
 
 function flip(card) {

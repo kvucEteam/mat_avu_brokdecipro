@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 	<head>
-		<title> </title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css" type="text/css" />
-		<script src="https://code.jquery.com/jquery-1.9.1.js">
-						
-		</script>
-		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js">
-		</script>
+		<title>Omregning</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../../library/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="../../library/vendor_scripts.js"></script>
+    <script src="../../library/custom_scripts.js"></script>
+    <script src="scripts.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 	
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -27,60 +28,64 @@
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
-	<body>
-		<div class="tabbable">
-			<!-- Only required for left/right tabs -->
-			<ul class="nav nav-tabs">
-				<li class="active">
-					<a href="#tab1" data-toggle="tab"><span class="star">★</span></a>
-				</li>
-				<li>
-					<a href="#tab2" data-toggle="tab"><span class="star">★★</span></a>
-				</li>
-				<li>
-					<a href="#tab3" data-toggle="tab"><span class="star">★★★</span></a>
-				</li>
-			</ul>
-			<div class="tab-content">
-				<div class="tab-pane active" id="tab1">
-					<iframe id="if" src="level1.html"></iframe>
-				</div>
+<body>
+	<div class="container-fluid">
+		<h1>Omskriv enheden</h1>
+        <div class="instruction"></div>
+	<div class="tabbable">
+		<!-- Only required for left/right tabs -->
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a href="#tab1" data-toggle="tab"><span class="star">★</span></a>
+			</li>
+			<li>
+				<a href="#tab2" data-toggle="tab"><span class="star">★★</span></a>
+			</li>
+			<li>
+				<a href="#tab3" data-toggle="tab"><span class="star">★★★</span></a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="tab1">
+				<iframe id="if" src="level1.html"></iframe>
+			</div>
 
 
 
-				<!-- NÆSTE SPIL !!!!!!! -->
+			<!-- NÆSTE SPIL !!!!!!! -->
 
 
 
-				<div class="tab-pane" id="tab2">
+			<div class="tab-pane" id="tab2">
 
-				</div>
-
-
-
-				<!-- NÆSTE SPIL !!!!!!! -->
+			</div>
 
 
 
+			<!-- NÆSTE SPIL !!!!!!! -->
 
-				<div class="tab-pane" id="tab3">
 
-				</div>
+
+
+			<div class="tab-pane" id="tab3">
+
 			</div>
 		</div>
-		<script>
+	</div>
+	<script>
 
 
-			$(function() {
+	$(function() {
 
 		$("li", ".nav").click(function() {
 			$("#if").remove();
-  			var tab = $($("a", this).attr("href"));
-  			var levelnumber = tab.attr('id').replace(/tab/g,"");
-  			tab.append("<iframe id='if' src='level" + levelnumber + ".html'></iframe>");
+			var tab = $($("a", this).attr("href"));
+			var levelnumber = tab.attr('id').replace(/tab/g,"");
+			tab.append("<iframe id='if' src='level" + levelnumber + ".html'></iframe>");
 		});
 	});
 
-		</script>
-	</body>
+	</script>
+</div>
+</body>
 </html>

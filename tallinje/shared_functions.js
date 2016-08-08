@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$("body").append("<div class ='overlay'><div class ='alertBox'></div><div></div></div>");
 	$(".overlay").fadeOut(0);
+
 });
 
 function updatebar(objectID) {
