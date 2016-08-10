@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Mulitple Choice</title>
-		<meta name="author" content="ato" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
-		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../mp.css" type="text/css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-		<script src="../mp.js"></script>
-				<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-	
-<!--[if gte mso 9]><xml>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mulitple Choice</title>
+    <meta name="author" content="ato" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../mp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../library/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="../../../library/vendor_scripts.js"></script>
+    <script src="../../../library/custom_scripts.js"></script>
+    <script src="scripts.js"></script>
+    <script src="../mp.js"></script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Chris Toft Christensen</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
 <mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
@@ -30,63 +32,66 @@
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
-	<body>
-		<div class="tabbable">
-			<!-- Only required for left/right tabs -->
-			<ul class="nav nav-tabs">
-				<li class="active">
-					<a href="#tab1" data-toggle="tab"><span class="star">★</span></a>
-				</li>
-				<li>
-					<a href="#tab2" data-toggle="tab"><span class="star">★★</span></a>
-				</li>
-				<li>
-					<a href="#tab3" data-toggle="tab"><span class="star">★★★</span></a>
-				</li>
-			</ul>
 
-			<div class="tab-content">
-				<div class="tab-pane active" id="tab1">
-					<div class="tabbable">
-						<div class = 'popud'> </div>
-					</div>
-				</div>
+<body>
+    <div class="container-fluid">
+        <h1>Placer tallene</h1>
+        <div class="instruction"></div>
+        <div class="col-sm-12 col-md-8">
+            <div class="tabbable">
+                <!-- Only required for left/right tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#tab1" data-toggle="tab"><span class="star">Let</span></a>
+                    </li>
+                    <li>
+                        <a href="#tab2" data-toggle="tab"><span class="star">Mellem</span></a>
+                    </li>
+                    <li>
+                        <a href="#tab3" data-toggle="tab"><span class="star">Svær</span></a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <div class="tabbable">
+                                <div class='popud'> </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <div class="tabbable">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <div class="tabbable">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(function() {
 
 
-				<div class="tab-pane" id="tab2">
-					<div class="tabbable">
-	
-					</div>	
-				</div>
+        getXML(datafile);
 
+        $("li", ".nav").click(function() {
+            $(".popud").remove();
+            var tabdata = $($("a", this).attr("href"));
+            tabdata.append("<div class = 'popud'> </div>");
+            datafile = tabdata.attr('id') + ".xml";
+            getXML(datafile);
 
-				</div>
-					<div class="tab-pane" id="tab3">
-						<div class="tabbable">
-				
-						</div>
-					</div>
-				
+        });
 
-				
-	<script>
-	$(function() {
+    });
 
+    $('.instruction').append(instruction("Skriv de rigtige tal i felterne for tæller, nævner, decimaltal eller procenttal."));
+    one_line_footer();
+    </script>
+    </div>
+</body>
 
-		getXML(datafile);
-
-		$("li", ".nav").click(function() {
-			$(".popud").remove();
-  			var tabdata = $($("a", this).attr("href"));
-  			tabdata.append("<div class = 'popud'> </div>");
-  			datafile = tabdata.attr('id') + ".xml";
-  			getXML(datafile);
-
-		});
-
-	});
-			
-	</script>
-    		</div>
-	</body>
 </html>
