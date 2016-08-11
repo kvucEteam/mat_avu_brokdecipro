@@ -86,7 +86,7 @@ function init(tal, taeller) {
 
 
 	for(var i = 0; i < svar_length; i++) {
-		options_text = options_text + "<hr/><table><tr id ='" + i + "'><td><img src='../img/i_valgt.png' class='btn' ></td><td><span class='imgspan'>" + svar.eq(i).attr("value") + "</span></td></tr></table>";
+		options_text = options_text + "<table><tr id ='" + i + "'><td><img src='../img/i_valgt.png' class='btn' ></td><td><span class='imgspan'>" + svar.eq(i).attr("value") + "</span></td></tr></table>";
 
 	}
 	
@@ -101,12 +101,20 @@ function init(tal, taeller) {
 		forklaring = "<p>" + spm.attr('forklaring') + "</p>";
 	}
 
-	$(".popud").html("<h4>" + (spm_taeller + 1) + " / " + spm_length + "<br/>Score: " + score + "</h4>" + image + forklaring + "<h3>" + tekst + "?</h3><p>" + options_text + "</p>");
+	$(".popud").html("<h5>" + (spm_taeller + 1) + " / " + spm_length + "<br/>Score: " + score + "</h5>" + image + forklaring + "<h3 class='q_mark'>Hvad er " + tekst + "<span class='spacing'> ?</span></h3><p>" + options_text + "</p>");
 
 	$("table").hover(function() {
 		$(this).find("img.btn").attr("src", "../img/valgt.png");
 	}, function() {
 		$(this).find("img.btn").attr("src", "../img/i_valgt.png");
+	});
+
+	$("table").each(function(){
+		var indeks = $(this).index();
+if (indeks % 2 == 0){
+	$(this).css("background-color", "#eee");
+}
+		console.log(indeks); //hide();
 	});
 
 	$("tr").click(function() {
@@ -166,11 +174,11 @@ function init(tal, taeller) {
 					colorfeed = "#ef5b5b";
 				}
 
-				slutfeed = slutfeed + "<h4 style='font-weight: normal;'>" + (i + 1) + ") &ensp; <span style ='color:"+ colorfeed+"'>" + tekst_Array[i] + " = " + valgt_Array[i] + "</span></h4>";
+				slutfeed = slutfeed + "<h5 style='font-weight: normal;'>" + (i + 1) + ") &ensp; <span style ='color:"+ colorfeed+"'>" + tekst_Array[i] + " = " + valgt_Array[i] + "</span></h5>";
 			}
 
 			$(".popud").html("<h3>" + sluttext +"</h3><button type='button' class='btn_again'><span class='glyphicon glyphicon-refresh'></span></button>" + slutfeed + "<button type='button' class='btn_again'><span class='glyphicon glyphicon-refresh'></span></button>");
-			//</h3> <br> <h4> Spørgsmål " + (spm_taeller + 1) + " af " + spm_length + "<br/>Score: " + score + "</h4>");
+			//</h3> <br> <h5> Spørgsmål " + (spm_taeller + 1) + " af " + spm_length + "<br/>Score: " + score + "</h5>");
 
 			MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 			

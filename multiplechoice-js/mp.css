@@ -39,8 +39,6 @@ hr {
 .popud {
 	border-color: #669999;
 	color: #666666;
-	position: absolute;
-	
 	width:400px;
 	/*background-image: url('img/p_bgr2.png');*/
 	/*background-color:white;*/
@@ -55,11 +53,10 @@ img {
 }
 .checkmark,
 .cross{
-	position: absolute;
 	height: 20px;
-	margin: 16px 0 0 0;
+	margin: 16px 20px 20px 0px; 
 	padding: 0;
-	left: 120px;
+	
 }
 
 .quizimg{
@@ -68,15 +65,15 @@ img {
 }
 
 h4{
-	font-family: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
-	font-size: 14px !important;
-	font-weight: bold;
-	color: #656565;
+
+	
 	margin: 10px 17px;
 	/*bottom:0px;x$
 	position:absolute;*/
 	width: 350px;
 }
+
+
 
 
 p{
@@ -131,4 +128,7 @@ td{
 	}
 h3 .MathJax {
 	font-weight: bold;
+}
+.spacing{
+	margin-left: 5px;
 }
