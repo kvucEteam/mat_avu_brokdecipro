@@ -160,7 +160,15 @@ $(document).ready(function() {
 		overallscore = Math.round(overallscore);
 		$(".bar").css("width", overallscore * 2 + 10 + "px");
 		$(".bar").html(overallscore + "%")
+	
+
+	if (overallscore > 99) {
+		$("body").append("<div class ='overlay'><div class ='alertBox'></div><div>");
+		$(".overlay").fadeIn(300);
+		$(".alertBox").html("</div><div class='alert_bread'><img class='finish' src='correct.png'></div>");
 	}
+}
+
 
 	function correct(inputfelt) {
 		var correcto = inputfelt.parent().find("img");
