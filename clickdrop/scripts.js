@@ -8,4 +8,29 @@ $(document).ready(function() {
     $('.instruction').append(instruction("Placér de rigtige brøker, decimaltal og procenttal i boksene. Klik på et tal, og klik derefter på den boks, hvor du mener tallet hører til."));
     one_line_footer();
 
+
+    //$("#swiffycontainer").find("g:nth-child(3)").addClass('hej'); //css("display", "none");
+    //var lengthers = $("#swiffycontainer").find("g").length; //hasClass("hej").css("display", "none");
+    //$("#swiffycontainer > g:nth-child(1)").css("display", "none");
+    //alert(lengthers);
+
+    // $('#swiffycontainer g:eq(0) > g:eq(0) > g:eq(0)> g:eq(0) > g:eq(20) > g:eq(0)').hide(); //.attr('class', 'xxxxxxx');
+
+
+repos_brok(1);
+
 });
+
+function repos_brok(num) {
+
+    for (var i = 11; i < 50; i++){
+
+    	console.log("i: " + i);
+
+ 		$('#swiffycontainer g:eq(0) > g:eq(0) > g:eq(0)> g:eq(0) > g:eq('+i+') > g:eq(0)').css("transform", "matrix(1,0,0,1,871,102)"); //addClass("y_pos");
+        /*$('#swiffycontainer g:eq(0) > g:eq(0) > g:eq(0)> g:eq(0) > g:eq(17) > g:eq(0)').css("transform", "matrix(1,0,0,1,871,102)"); //addClass("y_pos");});
+        $('#swiffycontainer g:eq(0) > g:eq(0) > g:eq(0)> g:eq(0) > g:eq(14) > g:eq(0)').css("transform", "matrix(1,0,0,1,871,102)"); //addClass("y_pos");
+        $('#swiffycontainer g:eq(0) > g:eq(0) > g:eq(0)> g:eq(0) > g:eq(11) > g:eq(0)').css("transform", "matrix(1,0,0,1,871,102)"); //addClass("y_pos");*/
+ }
+   
+}

@@ -18,12 +18,16 @@
     body {
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        
     }
     
     #flashContent {
         width: 100%;
         height: 100%;
+    }
+
+    iframe{
+        border:0px ;
     }
     </style>
     <!--[if gte mso 9]><xml>
@@ -48,39 +52,7 @@
         <h1>Rigtig eller forkert?</h1>
         <div class="instruction"></div>
         <div class="col-sm-12 col-md-8">
-            <div id="flashContent">
-                <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="670" height="610" id="rigtigForkert" align="middle">
-                    <param name="movie" value="rigtigForkert.swf" />
-                    <param name="quality" value="high" />
-                    <param name="bgcolor" value="#fafafa" />
-                    <param name="play" value="true" />
-                    <param name="loop" value="true" />
-                    <param name="wmode" value="window" />
-                    <param name="scale" value="showall" />
-                    <param name="menu" value="true" />
-                    <param name="devicefont" value="false" />
-                    <param name="salign" value="" />
-                    <param name="allowScriptAccess" value="sameDomain" />
-                    <!--[if !IE]>-->
-                    <object type="application/x-shockwave-flash" data="rigtigForkert.swf" width="670" height="610">
-                        <param name="movie" value="rigtigForkert.swf" />
-                        <param name="quality" value="high" />
-                        <param name="bgcolor" value="#fafafa" />
-                        <param name="play" value="true" />
-                        <param name="loop" value="true" />
-                        <param name="wmode" value="window" />
-                        <param name="scale" value="showall" />
-                        <param name="menu" value="true" />
-                        <param name="devicefont" value="false" />
-                        <param name="salign" value="" />
-                        <param name="allowScriptAccess" value="sameDomain" />
-                        <!--<![endif]-->
-                        <iframe src="rigtigForkert_swiffy.html" frameborder="0" width="670" height="610"></iframe>
-                        <!--[if !IE]>-->
-                    </object>
-                    <!--<![endif]-->
-                </object>
-            </div>
+            <iframe class="embed-responsive-item" height="600px" width= "800px" border="0" src="rigtigForkert_swiffy.html" allowfullscreen></iframe>
         </div>
     </div>
 </body>
