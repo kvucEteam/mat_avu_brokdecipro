@@ -17,7 +17,7 @@ $(document).ready(function() {
     // $('#swiffycontainer g:eq(0) > g:eq(0) > g:eq(0)> g:eq(0) > g:eq(20) > g:eq(0)').hide(); //.attr('class', 'xxxxxxx');
 
 
-repos_brok(1);
+setTimeout(function(){ repos_brok(19);}, 200);
 
 });
 
